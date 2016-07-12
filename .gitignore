@@ -1,0 +1,8 @@
+# no .php
+*.php
+
+#ignore all from wp_files
+wp_files/
+
+#ignore all from nttp_mockup_files
+nttp_mockup_files/
