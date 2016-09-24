@@ -4,21 +4,34 @@
 */
 
 
+/*
+	NO LONGER USED: function to change color of each letter in h1 headers. 
+
+
 (function(){
 var headers = document.getElementsByTagName("h1");
 for(var i = 0; i<headers.length;i++){
 	var ref_text = headers[i].innerHTML;//just a reference copy to get indexOf
-  //alert(ref_text);
+
+  //alert(ref_text); //check
+
 	var new_html = headers[i].innerHTML.split('').map(function(el){
 		return '<span class="letter-'+ref_text.indexOf(el)%4+'">'+el+"</span>";
 		}).join('');
 
 	headers[i].innerHTML = new_html;
-	//alert(headers[i].outerHTML);
+
+	//alert(headers[i].outerHTML); //check
+
 	}
 })();
 
-/*
+*/
+
+
+
+/* FOR TESTING & COURSERA CLASS
+
 var myHeading = document.querySelector('h1');
 myHeading.textContent = "Hello";
 
@@ -56,7 +69,10 @@ myBut.onclick = function(){
 }
 
 */
-/*
+
+
+/* DEPRECATED RESPONSIVE FUNCTION
+
 $(document).ready(function(){
 
 	$(window).resize(function(){
@@ -72,7 +88,7 @@ $(document).ready(function(){
 	});
 
 });
-*/
 
+*/
 
 
