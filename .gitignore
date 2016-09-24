@@ -1,8 +1,19 @@
 # no .php
-*.php
+	#9-23-16 now add .php files
+#*.php
 
 #ignore all from wp_files
 wp_files/
 
 #ignore all from nttp_mockup_files
 nttp_mockup_files/
+
+#ignore all image files
+images/
+
+#ignore fancybox add-on
+fancybox/
+
+
+#ignore ini file
+*.ini
