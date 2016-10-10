@@ -1,5 +1,3 @@
-/*header.php*/
-
 <?php
 ?>
 
@@ -17,7 +15,6 @@
     <title>new to the public</title>
 
     <script src="js/jquery.min.js"></script>
-    <!--<script src="js/handlebars-v3.0.3.js"></script>-->
    
     <link href='https://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>   
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
@@ -41,17 +38,9 @@
  <div class="header">
     <ul class="top-nav">
       <li class=""><a href="http://newtothepublic.com"><h5>home</h5></a></li>
-      <li class="WIP"><a href="/about.html"><h5>about</h5></a></li>
-        <li class=""><a href="contact.html"><h5>contact</h5></a></li>
-        <li class="WIP"><a href="blog.html"><h5>blog</h5></a></li>
+      <li class="WIP"><a href="/about.php"><h5>about</h5></a></li>
+        <li class=""><a href="/contact.php"><h5>contact</h5></a></li>
+        <li class="WIP"><a href="/blog.php"><h5>blog</h5></a></li>
     </ul>
-      <!--<li id="site-name-link" class="left"><a href="#"><h2 class="site-name"></h2></a></li>-->
-      <!--<li id="nav-links" class="top-nav-pos">
-        <ul id="inner-top-nav" class="top-nav-pos">
-          <li id="about" class="inner-top-nav-item wip"><a href="/about.html"><h2>about</h2></a></li>
-          <li id="contact" class="inner-top-nav-item"><a href="contact.html"><h2>contact</h2></a></li>
-         <!--<li id="blog" class="inner-top-nav-item wip"><a href="/blog.html"><h2>blog</h2></a></li>-->
-      <!-- </ul>
-      </li>
-    </ul>-->
+    
 </div><!--/header-->
