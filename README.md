@@ -14,9 +14,9 @@ Features
 - blog/CMS
 - admin section for blog to add, delete, edit entries
 - third party software:
--- [fancybox] (http://fancybox.net/) to display enlarged images
--- tinyMCE text editor
--- jQuery
+- -- [fancybox] (http://fancybox.net/) to display enlarged images
+- -- tinyMCE text editor
+- -- jQuery
 
 Removed features
 - colored headers
