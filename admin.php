@@ -44,7 +44,7 @@ function login(){
                   //login successful. redirect to admin page.
                   $_SESSION['username'] = $_POST['username'];
                   //$_SESSION['username'] = ADMIN_USERNAME;
-                  $_SESSION['username'] = 'avg';
+                  $_SESSION['username'] = 'username';
                   header("Location: admin.php");
             } else {
                   //login unsuccessful. retry.
