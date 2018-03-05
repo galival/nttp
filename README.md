@@ -1,23 +1,26 @@
 
-#New to the Public#
-##Portfolio site#
+New to the Public
+Portfolio site
 
 ---
 
-###Built using SQL, PHP, JavaScript/JQuery/AJAX, HTML/CSS.#
+Built using SQL, PHP, JavaScript/JQuery/AJAX, HTML/CSS.
 
-###Features#
+Features
 - database-driven front page that displays 
 	- a list of project codes
-	- projects separated by category
 	- the codes associated with each project
-- gallery page with galleries generated using AJAX request
-- [fancybox] (http://fancybox.net/) to display enlarged images
+- gallery page with images
+- blog/CMS
+- admin section for blog to add, delete, edit entries
+- third party software:
+-- [fancybox] (http://fancybox.net/) to display enlarged images
+-- tinyMCE text editor
+-- jQuery
 
-###Removed features#
+Removed features
 - colored headers
 
-###Future developments#
-- blog page
-- about page
-- procedures to check for data updates and mark recently updated with new
+Future developments
+- admin interface to change the codes for each current project, delete projects, and add new projects with codes
+- admin interface to add new codes
