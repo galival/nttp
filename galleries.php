@@ -1,16 +1,15 @@
 
 <?php
-require 'header.php';
-require 'functions.php';
+require_once 'header.php';
+require_once 'conf.php';
+require_once 'func.php';
+require_once 'js/galleries.js';
 
 ?>
 
 	<script language = "javascript" type = "text/javascript">
 	
-	//ajax call
 		function send_request(id){
-
-	//attempt request
 			var ajax_request;
                
                try {
@@ -29,7 +28,7 @@ require 'functions.php';
                      }
                      catch (e){
                         // Something went wrong
-                        alert("use a common browser");
+                        alert("request not supported by this browser.");
                         return false;
                      }
                   }
@@ -74,13 +73,10 @@ require 'functions.php';
 
 	
 	<?php
-		//connect to db 
         $conn = db_connect();
 
 
 		if ($conn){
-
-			/*get galleries*/
 			$s = "GetGalleries";
 			$q = sqlsrv_query($conn, $s);
 
@@ -88,18 +84,13 @@ require 'functions.php';
 				  die(print_r(sqlsrv_errors(), true));
 				}
 
-
-				//loop through data
-
 				while($o = sqlsrv_fetch_object($q)){
 				  echo '<li onclick = send_request(this.id) id="'.$o->gallery.'">
-				  		<span>'.$o->gallery.'</span>
+				  		<span class="gallery-selection">'.$o->gallery.'</span>
 				  	</li>
 				  ';
 				  }
 
-
-				 //release for next call
 				 sqlsrv_free_stmt($q);
 				}
 

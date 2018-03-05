@@ -4,7 +4,7 @@
 calls db and displays images based on element passed
 */
 
-require 'functions.php';
+require 'func.php';
 
 //establish db connection
 	//connect to db 
@@ -16,7 +16,7 @@ require 'functions.php';
             $gallery = $_GET['gallery'];
 
 
-        //query db to get images
+        //query db to get images associated with gallery
             $s = 'GetImages \''.$gallery.'\'';
             $q = sqlsrv_query($conn, $s);
 
@@ -24,11 +24,7 @@ require 'functions.php';
               die(print_r(sqlsrv_errors(), true));
             }
 
-
-        //declare result string
             $results = '';
-
-        //loop through data and append to results
 
             while($o = sqlsrv_fetch_object($q)){
 
@@ -43,7 +39,8 @@ require 'functions.php';
                 ';
               }
 
-            echo $results;}
+            echo $results;
+        }
 	else {
 		die (print_r(sqlsrv_errors(), true));
 	}

@@ -4,6 +4,8 @@
 
 <div class="footer" id="footer">
   <div class="footer-content">
+  	</br>
+  	</br>
     <p>new to the public &copy; 2013 - <?php echo date("Y");?> Alina Grigorovitch</p>
   </div>
 
